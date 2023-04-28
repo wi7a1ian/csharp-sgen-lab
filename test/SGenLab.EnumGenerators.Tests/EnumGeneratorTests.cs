@@ -3,7 +3,7 @@ namespace SGenLab.EnumGenerators.Tests
     [TestClass]
     public class EnumGeneratorTests
     {
-        [EnumExtensions] // Our marker attribute
+        [EnumExtensions]
         public enum Colour
         {
             Red = 0,
@@ -11,9 +11,11 @@ namespace SGenLab.EnumGenerators.Tests
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void GeneratedExtensionMethodWorks()
         {
-
+            var sut = Colour.Blue;
+            Assert.AreEqual(sut.ToStringFast(), "Blue");
+            Assert.AreEqual(Colour.Red.ToStringFast(), "Red");
         }
     }
 }

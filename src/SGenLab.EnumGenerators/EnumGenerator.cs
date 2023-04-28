@@ -9,6 +9,7 @@ namespace SGenLab.EnumGenerators;
 [Generator]
 public class EnumGenerator : IIncrementalGenerator
 {
+    // https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview
     // TODO: https://andrewlock.net/creating-a-source-generator-part-2-testing-an-incremental-generator-with-snapshot-testing/
 
     public void Initialize(IncrementalGeneratorInitializationContext context)

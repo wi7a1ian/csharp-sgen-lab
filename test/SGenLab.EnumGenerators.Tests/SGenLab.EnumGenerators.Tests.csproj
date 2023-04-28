@@ -16,7 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SGenLab.EnumGenerators\SGenLab.EnumGenerators.csproj" />
+    <ProjectReference Include="..\..\src\SGenLab.EnumGenerators\SGenLab.EnumGenerators.csproj"
+					  OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
   </ItemGroup>
 
 </Project>
